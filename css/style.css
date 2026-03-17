@@ -28,10 +28,20 @@ button{
     background-color: transparent;
     border: 4px solid #D300B7;
     border-radius: 56px;
-    padding: 10px 30px;
+    padding: 12px 20px;
     color: #D300B7;
     text-transform:uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font: bold 1.125rem "Raleway", sans-serif;
+}
+
+button p{
+    padding: 0;
+    margin: 0;
+    
+    
 }
 
 button:hover{
@@ -83,6 +93,14 @@ header a:hover{
     font: 900 1.75rem "Raleway", sans-serif;
 }
 /*--hero--*/
+.hero .wrapper{
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+    flex-direction: row;
+    height: 650px;
+}
+
 .hero{
     background-image: url(../img/hero.jpg);
     min-height: 650px;
@@ -94,8 +112,183 @@ header a:hover{
 .hero .content{
     display: flex;
     flex-direction: column;
-    height: 550px;
-    background-color: #00000080;
+    align-items: center;
+    height: 470px;
+    background-color: rgba(0, 0, 0, 0.8);
     width: 50%;
     border-radius: 20px;
+    padding: 40px;
+    gap: 30px;
+    position: relative;
+}
+
+.hero .title{
+    font: bold 4rem/110% "Raleway", sans-serif;
+    color: #D300B7;
+    text-transform: uppercase;
+    padding: 0%;
+    margin: 0%;
+}
+
+.hero .subtitle{
+    font: normal 1.5rem/160% "roboto", sans-serif;
+     padding: 0%;
+    margin: 0%;
+}
+
+.hero button{
+    height: 50px;
+    width: 278px;
+    position: absolute;
+    bottom: 40px;
+}
+
+/*----circuits----*/
+
+.circuits{
+    background-color: #222;
+    padding-bottom: 100px;
+}
+
+
+
+/*--circuit  intro--*/
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 0px;
+    gap: 20px;
+}
+
+.intro .title{
+    font: bold 3rem/110%  "Raleway", sans-serif;
+    padding:0;
+    margin: 0;
+}
+
+.intro .subtitle{
+    text-align: center;
+    font: normal 1.5rem/160% "roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/*--circuits cards--*/
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:30px ;
+    position: relative;
+}
+
+.coin{
+    position: absolute;
+    top: -46px;
+    right: -46px;
+    z-index: 100;
+}
+
+.card{
+    height: 570px;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.card .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.card .title{
+    font: bold 2rem/110% "Raleway", sans-serif;
+    color: #D300B7;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.card .subtitle{
+    font: normal 1.125rem/160% "roboto", sans-serif;
+    color: #000;
+    padding: 0;
+    margin: 0;
+}
+
+.card button{
+    position: absolute;
+    bottom: 40px;
+}
+
+/*---FOOTER--*/
+
+footer{
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+footer .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:60px ;
+}
+
+footer ul{
+    list-style-type: none;
+    display: flex;
+    gap:20px ;
+    padding: 0%;
+    margin: 0%;
+}
+
+footer a{
+    background-color: #D300B7;
+    color: #fff;
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+}
+
+footer a :hover{
+    background-color: #000;
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+}
+
+
+a p{
+    font-size: 60px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.txt{
+    font: normal 1.125rem/160% "roboto", sans-serif;
+    color: #000;
+    padding: 0%;
+    margin: 0%;
 }
